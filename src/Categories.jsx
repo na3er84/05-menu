@@ -2,13 +2,13 @@ import React from 'react';
 
 const Categories = ({ categories, filterItems }) => {
   return (
-    <div className="btn-container">
-      {categories.map((category, index) => {
+    <div className='btn-container'>
+      {categories.map((category) => {
         return (
           <button
-            type="button"
-            className="filter-btn"
-            key={index}
+            type='button'
+            className='btn'
+            key={category}
             onClick={() => filterItems(category)}
           >
             {category}
